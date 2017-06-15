@@ -1,11 +1,11 @@
 {
-  "name": "redux-simple-starter",
+  "name": "code_challenge",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "code_challenge",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
