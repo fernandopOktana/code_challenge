@@ -1,8 +1,10 @@
-import {createStore} from 'redux';
+import { createStore } from 'redux';
 import reducer from '../reducers/reducer_app';
 
-const initialState={
-  risk:0
-}
+const initialState = {
+  risk: 0,
+};
 
-export const store = createStore(reducer, initialState);
+const store = createStore(reducer, initialState);
+
+export default store;

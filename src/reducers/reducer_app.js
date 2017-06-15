@@ -2,13 +2,13 @@
 
 const reducer = (state = 0, action) => {
   switch (action.type) {
-    case 'UPDATE_RISK':    
-        return{
-            risk:action.risk
-        }
-      
+    case 'UPDATE_RISK':
+      return {
+        risk: action.risk,
+      };
+    default:
+      return state;
   }
-  return state
 };
 
 export default reducer;
